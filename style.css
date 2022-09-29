@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Original+Surfer&family=Rammetto+One&display=swap');
+
+* {
+    font-family: 'Original Surfer', cursive;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background: linear-gradient(to right, #c54747, #148d24d6);
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 90%;
+    margin: 80px auto;
+    user-select: none;
+    overflow: auto;
+    padding-top: 70px;
+}
+
+#datetimepicker {
+    width: 250px;
+    text-align: center;
+    padding: 6px;
+    outline: aliceblue;
+    border: 2px solid darkslategrey;
+    border-radius: 5px;
+    background-color: darkslategrey;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bolder;
+}
+
+.filterArea,
+.calendarArea {
+    /* border: 1px solid rgb(165, 164, 164);
+    border-radius: 2px; */
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: end;
+}
+
+.calendarArea {
+    padding-top: 50px;
+    width: 100%;
+}
+
+.calendarDays,
+.calendarArea {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    color: #fff;
+    font-weight: bolder
+}
+
+.calendarDays>div,
+.calendarArea>div {
+    border: 2px solid #fff;
+    border-radius: 6px;
+    text-align: center;
+    width: 160px;
+    cursor: pointer;
+    padding: 10px 0px;
+    min-height: 39.7px;
+}
+
+.calendarArea>div {
+    width: 100%;
+    display: flex;
+    text-align: unset;
+    position: relative;
+    z-index: 10;
+    padding: 0px;
+    min-height: 40px;
+    align-items: center;
+}
+
+.openAddHtml {
+    width: 100%;
+    display: flex;
+    text-align: unset;
+    position: relative;
+    z-index: 10;
+}
+
+.addArea {
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+    user-select: text;
+    border: 1px solid #fff;
+    width: 350px;
+    height: 110px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 16px;
+    left: 47px;
+    background-color: white;
+    z-index: 20;
+    cursor: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    padding: 20px;
+    outline: none;
+}
+
+.flexArea {
+    display: flex;
+    gap: 5px;
+}
+
+.addArea p {
+    color: black;
+}
+
+.addTime {
+    width: 50px;
+    padding: 4px;
+    outline: none;
+    border: 2px solid darkslategrey;
+    border-radius: 5px
+}
+
+.addText {
+    width: 100%;
+    padding: 4px;
+    outline: none;
+    border: 2px solid darkslategrey;
+    border-radius: 5px
+}
+
+::placeholder {
+    color: darkslategrey;
+}
+
+.calItems {
+    margin-left: 5px;
+    border-right: 1px solid #fff;
+    padding: 0px 10px;
+    position: relative;
+    z-index: 15;
+    display: flex;
+    align-items: center;
+    min-height: 34px;
+}
+
+.addSpan {
+    width: 100%;
+    min-height: 38px;
+}
+
+.flexArea button {
+    padding: 5px;
+    background-color: darkslategrey;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    transition: .5s;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.flexArea button:hover {
+    color: darkslategrey;
+    background-color: #fff;
+}
+
+.drp-buttons button {
+    background-color: rgb(7, 116, 116);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    transition: .5s;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.drp-buttons button:hover {
+    color: rgb(7, 116, 116);
+    background-color: #fff;
+}
